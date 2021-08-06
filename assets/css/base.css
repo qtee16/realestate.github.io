@@ -94,6 +94,10 @@ h1, h2, h3, h4 {
     display: block !important;
 }
 
+.pink {
+    color: var(--light-pink) !important;
+}
+
 @keyframes slideToBottom {
     from {
         /* opacity: 0; */
