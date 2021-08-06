@@ -20,16 +20,22 @@
         <div id="header">
             <div class="container">
                 <div class="header__nav">
-                    <a href="" class="header__nav-brand">QTEE</a>
-                    <ul class="header__nav-list">
-                        <li class="header__nav-item"><a href="">Home</a></li>
-                        <li class="header__nav-item"><a href="">About</a></li>
-                        <li class="header__nav-item"><a href="">Agent</a></li>
-                        <li class="header__nav-item"><a href="">Services</a></li>
-                        <li class="header__nav-item"><a href="">Properties</a></li>
-                        <li class="header__nav-item"><a href="">Blog</a></li>
-                        <li class="header__nav-item"><a href="">Contact</a></li>
-                    </ul>
+                    <a href="#" class="header__nav-brand">QTEE</a>
+                    <button onclick="showMenu()" class="header__button">
+                        <i class="fas fa-bars"></i>
+                            MENU
+                    </button>
+                    <div class="header__list-wrapper">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#">Home</a></li>
+                            <li class="header__nav-item"><a href="#about">About</a></li>
+                            <li class="header__nav-item"><a href="#agent">Agent</a></li>
+                            <li class="header__nav-item"><a href="#service">Services</a></li>
+                            <li class="header__nav-item"><a href="#offer">Properties</a></li>
+                            <li class="header__nav-item"><a href="#blog">Blog</a></li>
+                            <li class="header__nav-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +56,7 @@
                             </p>
                             <form action="#" class="banner__search">
                                 <div class="row justify-content-center">
-                                    <div class="col l-10 m-10">
+                                    <div class="col l-10 m-10 c-12">
                                         <div class="banner__search-field">
                                             <input type="text" class="banner__search-input" placeholder="Search location">
                                             <button class="banner__search-button">
@@ -65,14 +71,14 @@
                 </div>
             </div>
             <div class="mouse-button">
-                <a href="">
+                <a href="#offer">
                     <i class="fal fa-long-arrow-down"></i>
                 </a>
             </div>
         </div>
 
         <div id="content">
-            <div class="content__section">
+            <div id="service" class="content__section">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col l-12 m-12 text-center mb-48" data-aos="fade-up">
@@ -145,7 +151,7 @@
                 </div>
             </div>
 
-            <div class="content__section">
+            <div id="offer" class="content__section">
                 <div class="container">
                     <div class="row justify-content-center" data-aos="fade-up">
                         <div class="col l-12 m-12 text-center mb-48">
@@ -281,7 +287,7 @@
                 </div>
             </div>
 
-            <div class="content__section about">
+            <div id="about" class="content__section about">
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="col l-6 m-6 c-12 about__img" style="background-image: url(./assets/img/about/about1.jpg);"></div>
@@ -305,7 +311,7 @@
             <div class="counter">
                 <div class="container">
                     <div class="row">
-                        <div class="col l-3 m-6 c-6" data-aos="fade-up">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up">
                             <div class="counter__wrapper">
                                 <div class="counter__item-body align-item-center justify-content-center">
                                     <strong class="number" data-number="305">305</strong>
@@ -318,7 +324,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-3 m-6 c-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="100">
                             <div class="counter__wrapper">
                                 <div class="counter__item-body align-item-center justify-content-center">
                                     <strong class="number" data-number="1,090">1,090</strong>
@@ -331,7 +337,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-3 m-6 c-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="200">
                             <div class="counter__wrapper">
                                 <div class="counter__item-body align-item-center justify-content-center">
                                     <strong class="number" data-number="209">209</strong>
@@ -344,7 +350,7 @@
                             </div>
                         </div>
 
-                        <div class="col l-3 m-6 c-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="col l-3 m-6 c-12" data-aos="fade-up" data-aos-delay="300">
                             <div class="counter__wrapper">
                                 <div class="counter__item-body align-item-center justify-content-center">
                                     <strong class="number" data-number="67">67</strong>
@@ -360,7 +366,7 @@
                 </div>
             </div>
 
-            <div class="content__section agent">
+            <div id="agent" class="content__section agent">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col l-12 m-12 text-center mb-48" data-aos="fade-up">
@@ -425,7 +431,7 @@
                 </div>
             </div>
 
-            <div class="content__section blog">
+            <div id="blog" class="content__section blog">
                 <div class="container">
                     <div class="row justify-content-center" data-aos="fade-up">
                         <div class="col l-12 m-12 text-center mb-48">

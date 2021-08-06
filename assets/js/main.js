@@ -57,3 +57,26 @@ window.addEventListener("scroll", function() {
 
 //     updateCount();
 // })
+
+var menuHeader = document.querySelector(".header__list-wrapper");
+var menuList = document.querySelector(".header__nav-list");
+
+function showMenu() {
+    menuHeader.classList.toggle("show");
+}
+
+function hideMenu() {
+    menuHeader.classList.remove("show");
+}
+
+const main = document.querySelector("#main");
+
+main.addEventListener("click", function() {
+    menuHeader.classList.remove("show");
+})
+
+header.addEventListener("click", function(e) {
+    e.stopPropagation();
+})
+
+menuList.addEventListener("click", hideMenu);

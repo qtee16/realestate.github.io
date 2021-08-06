@@ -3,6 +3,48 @@
 }
 
 @media (max-width: 739px) {
+    #header {
+        top: 0;
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    #header .container {
+        padding: 0;
+    }
+
+    .header__list-wrapper {
+        flex-basis: 100%;
+        flex-grow: 1;
+        display: none;
+        animation: slideToBottom 0.3s ease;
+    }
+
+    @keyframes slideToBottom {
+        from {
+            /* opacity: 0; */
+            transform: translateY(-100%);
+        }
+        to {
+            /* opacity: 1; */
+            transform: translateY(0);
+        }
+    }
+
+    .header__button {
+        display: block;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-item a {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+
     #content .work-flow {
         width: 100%;
     }
