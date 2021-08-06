@@ -1,3 +1,39 @@
 .container {
     max-width: 1240px;
 }
+
+@media (max-width: 739px) {
+    #content .work-flow {
+        width: 100%;
+    }
+
+    .work-flow__content-wrapper {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .about__img {
+        height: 600px;
+    }
+
+    .about__desc-wrapper {
+        margin-left: 0;
+    }
+    
+    .footer__item-wrapper {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer__item-heading {
+        margin-bottom: 0;
+    }
+
+    .social-list {
+        margin: 16px 0 16px;
+    }
+
+    .contact div {
+        display: inline;
+    }
+}

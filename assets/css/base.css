@@ -63,6 +63,10 @@ h1, h2, h3, h4 {
     padding-right: 2.4rem;
 }
 
+.ml-60 {
+    margin-left: 60px;
+}
+
 #header.scrolled {
     position: fixed;
     top: 0;
