@@ -292,6 +292,10 @@
     height: 250px;
 }
 
+.offer__wrapper .offer__img:hover {
+    opacity: 0.6;
+}
+
 
 .offer__body {
     background: var(--white);
@@ -689,6 +693,9 @@
     height: 60px;
     font-size: 1.6rem;
     color: var(--white);
-    transform: translateY(10%);
+    
+}
+
+#buttonOnTop a i {
     animation: slideToTop 2s ease infinite;
 }

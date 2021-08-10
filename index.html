@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -592,6 +593,33 @@
 
         <div id="buttonOnTop">
             <a href="#"><i class="fad fa-chevron-double-up"></i></a>
+        </div>
+
+        <div class="modal">
+            <div class="modal__container">
+                <div class="modal__close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="modal__header">
+                    <h1><i class="far fa-home"></i> YOUR OFFER</h1>
+                </div>
+                <div class="modal__body">
+                    <form action="">
+                        <label for="modal__name">
+                            <i class="fas fa-user"></i> Full name
+                        </label>
+                        <input id="modal__name" type="text" required placeholder="Type your full name">
+                        <label class="mt-32" for="modal__email">
+                            <i class="fas fa-envelope"></i> Email
+                        </label>
+                        <input id="modal__email" type="email" required placeholder="Type your email">
+                        <button type="submit">PAY <i class="far fa-check"></i></button>
+                    </form>
+                </div>
+                <div class="modal__footer">
+                    <p>You need <a href="">support ?</a></p>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./assets/js/main.js"></script>

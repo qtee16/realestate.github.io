@@ -89,3 +89,27 @@ function navHighlighter() {
         }
     })
 }
+
+// Show modal 
+
+var offerLinks = document.querySelectorAll(".offer__img")
+var modal = document.querySelector(".modal")
+var closeButton = document.querySelector(".modal__close")
+var modalContainter = document.querySelector(".modal__container")
+
+const hideModal = () => modal.classList.remove("showModal")
+
+offerLinks.forEach(function(link) {
+    link.addEventListener("click", function (event) {
+        event.preventDefault()
+        modal.classList.add("showModal")
+
+    })
+})
+
+closeButton.addEventListener("click", hideModal)
+modal.addEventListener("click", hideModal)
+
+modalContainter.addEventListener("click", function (event) {
+    event.stopPropagation()
+})

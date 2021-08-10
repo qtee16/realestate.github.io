@@ -1,0 +1,102 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background-color: var(--white);
+    width: 900px;
+    max-width: calc(100% - 64px);
+    position: relative;
+    animation: modalFadeIn 0.5s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 16px 2px;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.modal__close:hover {
+    background-color: #ccc;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.modal__header {
+    padding: 30px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__header h1 {
+    color: var(--white);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.modal__body {
+    padding: 1.6rem;
+}
+
+.modal__body label {
+    display: block;
+    font-size: 1.6rem;
+}
+
+.modal__body input {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.modal__body button {
+    font-family: 'Indie Flower', cursive;
+    width: 100%;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 32px;
+    font-weight: 700;
+}
+
+.modal__body button:hover {
+    cursor: pointer;
+    background-color: var(--dark-primary);
+}
+
+.modal__footer {
+    font-size: 1.6rem;
+    text-align: right;
+    margin: 16px;
+}
+
+.modal__footer a {
+    color: var(--primary);
+}
