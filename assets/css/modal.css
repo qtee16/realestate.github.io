@@ -55,7 +55,7 @@
 
 .modal__header h1 {
     color: var(--white);
-    font-size: 4rem;
+    font-size: 4.4rem;
     text-align: center;
 }
 
@@ -65,7 +65,8 @@
 
 .modal__body label {
     display: block;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 .modal__body input {
@@ -92,7 +93,8 @@
 }
 
 .modal__footer {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 300;
     text-align: right;
     margin: 16px;
 }
