@@ -47,7 +47,7 @@
 
 .header__nav-brand:hover,
 .header__nav-item:hover a {
-    color: var(--light-pink);
+    color: var(--primary);
 }
 
 .header__button {
@@ -162,12 +162,12 @@
     width: 7rem;
     height: 7rem;
     border: none;
-    background-color: var(--light-pink);
+    background-color: var(--primary);
 }
 
 .banner__search-button:hover {
     cursor: pointer;
-    background-color: var(--pink);
+    background-color: var(--dark-primary);
 }
 
 .banner__search-button i {
@@ -190,7 +190,7 @@
     height: 8rem;
     border-radius: 50%;
     display: block;
-    background-color: var(--light-pink);
+    background-color: var(--primary);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -227,7 +227,7 @@
     font-size: 1.4rem;
     line-height: 1.8;
     font-weight: 700;
-    color: var(--light-pink);
+    color: var(--primary);
     position: relative;
 }
 
@@ -238,7 +238,7 @@
     position: absolute;
     top: 50%;
     left: -60px;
-    background-color: var(--light-pink);   
+    background-color: var(--primary);   
 }
 
 .section__subheading::after {
@@ -248,7 +248,7 @@
     position: absolute;
     top: 50%;
     right: -60px;
-    background-color: var(--light-pink);   
+    background-color: var(--primary);   
 }
 
 .section__heading {
@@ -264,7 +264,7 @@
 
 .service__item-icon {
     font-size: 6rem;
-    color: var(--light-pink);
+    color: var(--primary);
 }
 
 .service__item-body {
@@ -361,7 +361,7 @@
     content: "";
     width: 4rem;
     height: 4rem;
-    background-color: var(--light-pink);
+    background-color: var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,7 +402,7 @@
     color: var(--white);
     width: 9rem;
     height: 9rem;
-    background-color: var(--light-pink);
+    background-color: var(--primary);
     border-radius: 50%;
     display: flex;
     margin-left: auto;
@@ -539,7 +539,7 @@
 }
 
 .blog__item-heading a:hover {
-    color: var(--light-pink);
+    color: var(--primary);
     transition: all 0.3s ease;
 }
 
@@ -612,7 +612,7 @@
     width: 5rem;
     height: 5rem;
     position: relative;
-    color: var(--light-pink);
+    color: var(--primary);
 }
 
 .social-list i {
@@ -630,7 +630,7 @@
 }
 
 .list-arrow i {
-    color: var(--light-pink);
+    color: var(--primary);
 }
 
 .contact a {
@@ -647,6 +647,48 @@
 }
 
 .contact__icon i {
-    color: var(--light-pink);
+    color: var(--primary);
     font-size: 1.8rem;
+}
+
+.footer__powered {
+    margin-top: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.footer__powered a {
+    color: var(--primary);
+}
+
+#footer a:hover,
+.contact  a  .contact__text:hover {
+    color: var(--dark-primary) !important;
+}
+
+.active {
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary) !important;
+    font-weight: 700;
+    transition: all 0.1s ease;
+}
+
+#buttonOnTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    background-color: var(--dark-primary);
+    text-align: center;
+    z-index: 6;
+}
+
+#buttonOnTop a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 1.6rem;
+    color: var(--white);
+    transform: translateY(10%);
+    animation: slideToTop 2s ease infinite;
 }

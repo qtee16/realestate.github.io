@@ -2,8 +2,8 @@
     --white: #fff;
     --black: #000;
     --text: #333;
-    --light-pink: #e86ed0;
-    --pink: #e83e8c;
+    --primary: #fd9e78;
+    --dark-primary: #fc713a;
 }
 
 * {
@@ -21,6 +21,10 @@ html {
 
 body {
     line-height: 1.8;
+}
+
+#main {
+    position: relative;
 }
 
 .container {
@@ -94,8 +98,8 @@ h1, h2, h3, h4 {
     display: block !important;
 }
 
-.pink {
-    color: var(--light-pink) !important;
+.primary {
+    color: var(--primary) !important;
 }
 
 @keyframes slideToBottom {
@@ -116,10 +120,10 @@ h1, h2, h3, h4 {
 @keyframes slideToTop {
     from {
         opacity: 0;
-        transform: translateY(100%);
+        transform: translateY(60%);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(10%);
     }
 }

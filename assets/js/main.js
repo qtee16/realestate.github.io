@@ -1,3 +1,5 @@
+// Show and hide header
+
 var header = document.querySelector("#header");
 var banner = document.querySelector("#banner");
 window.addEventListener("scroll", function() {
@@ -27,36 +29,15 @@ window.addEventListener("scroll", function() {
         }
     }
 
+
+    // Banner when scroll
     var oldValue = "background-image: url(./assets/img/banner/banner1.jpg);";
     var newValue = oldValue + ` background-position: 50% ${x / 2}px;`;
     banner.setAttribute("style", newValue)
 
 })
 
-
-// Number
-
-// var counters = document.querySelectorAll(".number");
-
-// const time = 2000;
-
-// counters.forEach(counter => {
-//     const updateCount = () => {
-//         const target = +counter.getAttribute("data-number");
-//         const count = +counter.innerText;
-//         var newTime = Math.ceil(time / target)
-//         // console.log(newTime, target)
-//         if (count < target) {
-//             counter.innerText = count + 1;
-//             setTimeout(updateCount, newTime);
-//         }
-//         else {
-//             count.innerText = target;
-//         }
-//     }
-
-//     updateCount();
-// })
+// Menu header
 
 var menuHeader = document.querySelector(".header__list-wrapper");
 var menuList = document.querySelector(".header__nav-list");
@@ -80,3 +61,31 @@ header.addEventListener("click", function(e) {
 })
 
 menuList.addEventListener("click", hideMenu);
+
+// Active when scroll
+
+const section = document.querySelectorAll(".content__section[id]")
+window.addEventListener("scroll", navHighlighter)
+
+function navHighlighter() {
+    let scrollY = window.pageYOffset
+    let homeItem = document.querySelector('.home-item')
+    if (scrollY > 700) {
+        homeItem.classList.remove("active")
+    }
+    else {
+        homeItem.classList.add("active")
+    }
+    section.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 100
+        sectionID = current.getAttribute("id")
+        let navItem = document.querySelector(`.header__nav-item a[href*=${sectionID}]`)
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            navItem.classList.add("active")
+        }
+        else {
+            navItem.classList.remove("active")
+        }
+    })
+}
