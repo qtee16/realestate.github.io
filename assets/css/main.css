@@ -26,7 +26,7 @@
 }
 
 .header__nav-brand {
-    font-size: 2.4rem;
+    font-size: 4rem;
     text-decoration: none;
     color: var(--black-color);
     font-weight: 700;
@@ -38,7 +38,7 @@
 }
 
 .header__nav-item a {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-decoration: none;
     padding: 14px 20px;
     color: var(--black-color);
@@ -121,13 +121,14 @@
 }
 
 .banner__heading {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 7rem;
+    line-height: 7rem;
     margin-bottom: 24px;
+    font-weight: 500;
 }
 
 .banner__title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1.5;
     margin-bottom: 16px;
 }
@@ -224,10 +225,10 @@
 }
 
 .section__subheading {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.8;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--primary) !important;
     position: relative;
 }
 
@@ -252,8 +253,9 @@
 }
 
 .section__heading {
-    font-size: 4rem;
+    font-size: 4.4rem;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 /* Service */
@@ -272,12 +274,13 @@
 }
 
 .service__item-heading {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     margin-bottom: 8px;
 }
 
 .service__item-desc {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /* Offer */
@@ -425,7 +428,8 @@
 
 .work-flow__item-desc {
     color: var(--white);
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 
 /* About */
@@ -454,7 +458,8 @@
 }
 
 .about__desc-main {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 300;
     margin-bottom: 16px;
 }
 
@@ -509,18 +514,21 @@
 }
 
 .agent__item-name {
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 2.6rem;
     text-decoration: none;
     color: var(--black);
 }
 
 .agent__item-location {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     color: #666;
 }
 
 .agent__item-detail {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
 }
 
 /* Blog */
@@ -539,7 +547,8 @@
 }
 
 .blog__item-heading a {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    font-weight: 400;
 }
 
 .blog__item-heading a:hover {
@@ -575,7 +584,8 @@
 }
 
 .blog__item-desc {
-    font-size: 16px;
+    font-size: 1.8rem;
+    font-weight: 300;
     margin-bottom: 16px;
 }
 
@@ -589,7 +599,7 @@
 
 
 .footer__item-heading {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     margin-bottom: 40px;
 }
 
@@ -598,7 +608,8 @@
 }
 
 .footer__item-body p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     margin-bottom: 16px;
 }
 
@@ -628,7 +639,8 @@
 }
 
 .list-arrow a {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     text-decoration: none;
     color: var(--black);
 }
@@ -642,7 +654,8 @@
 }
 
 .contact li span {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-weight: 300;
     display: table-cell;
 }
 
@@ -691,7 +704,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--white);
     
 }
