@@ -1,0 +1,53 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    z-index: 1000;
+    animation: fade 0.5s ease 3s forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}
+
+.box{
+    position: absolute;
+    top: 50%;  left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box h1{
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    letter-spacing: 20px;
+    text-transform: uppercase;  
+    font-size: 70px;
+    color: #000;  background: #fff;
+    mix-blend-mode: difference;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 130px;  height: 100%;
+    background: #fff;
+    animation: animate 5s infinite linear;
+}
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: calc(100% - 130px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.hideLoading {
+    display: none;
+}

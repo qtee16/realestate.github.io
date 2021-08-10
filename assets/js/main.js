@@ -113,3 +113,11 @@ modal.addEventListener("click", hideModal)
 modalContainter.addEventListener("click", function (event) {
     event.stopPropagation()
 })
+
+// Loading
+
+var loading = document.querySelector("#loading")
+
+setTimeout(function () {
+    loading.classList.add("hideLoading")
+}, 3500)
